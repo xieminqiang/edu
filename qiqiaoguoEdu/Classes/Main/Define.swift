@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-import UITableView_FDTemplateLayoutCell
+
 import SnapKit
 //颜色
 let QGColor_000000 = UIColor.init(hexString:"000000")

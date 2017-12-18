@@ -1,0 +1,6 @@
+framework module Pods_qiqiaoguoEdu {
+  umbrella header "Pods-qiqiaoguoEdu-umbrella.h"
+
+  export *
+  module * { export * }
+}
