@@ -46,7 +46,7 @@ extension UIView {
     
     }
 
-    public var bottom: CGFloat{
+    public var  maxY: CGFloat{
         
         get {
             return self.frame.origin.y+self.frame.size.height
@@ -59,7 +59,19 @@ extension UIView {
         }
         
     }
-    
+    public var maxX: CGFloat{
+        
+        get {
+            return self.frame.origin.x+self.frame.size.width
+        }
+        set{
+            
+            var r = self.frame
+            r.origin.x = newValue - self.frame.size.width
+            self.frame = r
+        }
+        
+    }
     public var width: CGFloat{
         
         get {

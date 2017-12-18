@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		138FCF4E7C319B5F0AACEB11 /* Pods_qiqiaoguoEdu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB4450CF4F0DA25F751BB49 /* Pods_qiqiaoguoEdu.framework */; };
 		673B64231FC403C80072D1ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673B64221FC403C80072D1ED /* AppDelegate.swift */; };
 		673B64251FC403C80072D1ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673B64241FC403C80072D1ED /* ViewController.swift */; };
 		673B642B1FC403C80072D1ED /* qiqiaoguoEdu.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 673B64291FC403C80072D1ED /* qiqiaoguoEdu.xcdatamodeld */; };
@@ -19,7 +20,12 @@
 		673B64661FC405DE0072D1ED /* QGMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673B64651FC405DE0072D1ED /* QGMeViewController.swift */; };
 		673B64681FC405EE0072D1ED /* QGMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673B64671FC405EE0072D1ED /* QGMessageViewController.swift */; };
 		673B646A1FC4379B0072D1ED /* QGTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673B64691FC4379B0072D1ED /* QGTabBarController.swift */; };
+		673DDA6B1FC571110071A156 /* QGNetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673DDA6A1FC571110071A156 /* QGNetManager.swift */; };
 		675A98AD1FC5280700BBEED2 /* QGNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675A98AC1FC5280700BBEED2 /* QGNavigationController.swift */; };
+		676D7BD11FE36BFA00CC9470 /* QGBtnTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676D7BD01FE36BFA00CC9470 /* QGBtnTagView.swift */; };
+		676D7BDD1FE399B700CC9470 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676D7BDC1FE399B700CC9470 /* String+Ext.swift */; };
+		676D7BE31FE3CDC900CC9470 /* QGCoursesListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676D7BE21FE3CDC900CC9470 /* QGCoursesListModel.swift */; };
+		67F8C0911FE1328F003AB977 /* QGHomeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F8C0901FE1328F003AB977 /* QGHomeViewCell.swift */; };
 		67FF46FD1FC52DA100420D6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67FF46FC1FC52DA100420D6E /* Main.storyboard */; };
 		67FF46FF1FC54EF500420D6E /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FF46FE1FC54EF500420D6E /* UIView+Ext.swift */; };
 		67FF47011FC54EFE00420D6E /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FF47001FC54EFE00420D6E /* Define.swift */; };
@@ -64,13 +70,21 @@
 		673B64651FC405DE0072D1ED /* QGMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGMeViewController.swift; sourceTree = "<group>"; };
 		673B64671FC405EE0072D1ED /* QGMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGMessageViewController.swift; sourceTree = "<group>"; };
 		673B64691FC4379B0072D1ED /* QGTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGTabBarController.swift; sourceTree = "<group>"; };
+		673DDA6A1FC571110071A156 /* QGNetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGNetManager.swift; sourceTree = "<group>"; };
 		675A98AC1FC5280700BBEED2 /* QGNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGNavigationController.swift; sourceTree = "<group>"; };
+		676D7BD01FE36BFA00CC9470 /* QGBtnTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGBtnTagView.swift; sourceTree = "<group>"; };
+		676D7BDC1FE399B700CC9470 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		676D7BE21FE3CDC900CC9470 /* QGCoursesListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGCoursesListModel.swift; sourceTree = "<group>"; };
+		67F8C0901FE1328F003AB977 /* QGHomeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGHomeViewCell.swift; sourceTree = "<group>"; };
 		67FF46FC1FC52DA100420D6E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		67FF46FE1FC54EF500420D6E /* UIView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 		67FF47001FC54EFE00420D6E /* Define.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Define.swift; sourceTree = "<group>"; };
 		67FF47041FC556D500420D6E /* SwiftHEXColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftHEXColors.swift; sourceTree = "<group>"; };
 		67FF47071FC558FA00420D6E /* QGTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGTableViewCell.swift; sourceTree = "<group>"; };
 		67FF47091FC5591200420D6E /* QGTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGTableView.swift; sourceTree = "<group>"; };
+		C704D16891CCE0C19E0D5E99 /* Pods-qiqiaoguoEdu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qiqiaoguoEdu.release.xcconfig"; path = "Pods/Target Support Files/Pods-qiqiaoguoEdu/Pods-qiqiaoguoEdu.release.xcconfig"; sourceTree = "<group>"; };
+		EB25E11E2C4B1C940DEFE37B /* Pods-qiqiaoguoEdu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qiqiaoguoEdu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-qiqiaoguoEdu/Pods-qiqiaoguoEdu.debug.xcconfig"; sourceTree = "<group>"; };
+		EFB4450CF4F0DA25F751BB49 /* Pods_qiqiaoguoEdu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_qiqiaoguoEdu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				138FCF4E7C319B5F0AACEB11 /* Pods_qiqiaoguoEdu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +113,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C614B9841C62D28F2FBFBD5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EFB4450CF4F0DA25F751BB49 /* Pods_qiqiaoguoEdu.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		673B64161FC403C80072D1ED = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +128,8 @@
 				673B64391FC403C80072D1ED /* qiqiaoguoEduTests */,
 				673B64441FC403C80072D1ED /* qiqiaoguoEduUITests */,
 				673B64201FC403C80072D1ED /* Products */,
+				7325770BECB3ADB4C6EA3F19 /* Pods */,
+				2C614B9841C62D28F2FBFBD5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -190,6 +215,9 @@
 		673B64571FC404F30072D1ED /* View */ = {
 			isa = PBXGroup;
 			children = (
+				67F8C0901FE1328F003AB977 /* QGHomeViewCell.swift */,
+				676D7BD01FE36BFA00CC9470 /* QGBtnTagView.swift */,
+				676D7BE21FE3CDC900CC9470 /* QGCoursesListModel.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -197,6 +225,7 @@
 		673B64581FC404F30072D1ED /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				67FF470B1FC566A800420D6E /* 网络请求 */,
 				67FF47061FC558C100420D6E /* View */,
 				673B64611FC4059A0072D1ED /* QGViewController.swift */,
 				673B64691FC4379B0072D1ED /* QGTabBarController.swift */,
@@ -204,6 +233,7 @@
 				67FF46FE1FC54EF500420D6E /* UIView+Ext.swift */,
 				67FF47001FC54EFE00420D6E /* Define.swift */,
 				67FF47041FC556D500420D6E /* SwiftHEXColors.swift */,
+				676D7BDC1FE399B700CC9470 /* String+Ext.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -281,6 +311,23 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		67FF470B1FC566A800420D6E /* 网络请求 */ = {
+			isa = PBXGroup;
+			children = (
+				673DDA6A1FC571110071A156 /* QGNetManager.swift */,
+			);
+			path = "网络请求";
+			sourceTree = "<group>";
+		};
+		7325770BECB3ADB4C6EA3F19 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB25E11E2C4B1C940DEFE37B /* Pods-qiqiaoguoEdu.debug.xcconfig */,
+				C704D16891CCE0C19E0D5E99 /* Pods-qiqiaoguoEdu.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -288,9 +335,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 673B644A1FC403C80072D1ED /* Build configuration list for PBXNativeTarget "qiqiaoguoEdu" */;
 			buildPhases = (
+				373C370B09CA436D802E8466 /* [CP] Check Pods Manifest.lock */,
 				673B641B1FC403C80072D1ED /* Sources */,
 				673B641C1FC403C80072D1ED /* Frameworks */,
 				673B641D1FC403C80072D1ED /* Resources */,
+				30577CFD04C8C9F83ED8FD04 /* [CP] Embed Pods Frameworks */,
+				29AA2145A6473C5A6B34A0EB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -350,6 +400,7 @@
 				TargetAttributes = {
 					673B641E1FC403C80072D1ED = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 					673B64351FC403C80072D1ED = {
@@ -411,6 +462,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		29AA2145A6473C5A6B34A0EB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-qiqiaoguoEdu/Pods-qiqiaoguoEdu-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		30577CFD04C8C9F83ED8FD04 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-qiqiaoguoEdu/Pods-qiqiaoguoEdu-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDCycleScrollView/SDCycleScrollView.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/UITableView+FDTemplateLayoutCell/UITableView_FDTemplateLayoutCell.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDCycleScrollView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UITableView_FDTemplateLayoutCell.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-qiqiaoguoEdu/Pods-qiqiaoguoEdu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		373C370B09CA436D802E8466 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-qiqiaoguoEdu-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		673B641B1FC403C80072D1ED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -422,10 +543,15 @@
 				67FF46FF1FC54EF500420D6E /* UIView+Ext.swift in Sources */,
 				67FF47051FC556D500420D6E /* SwiftHEXColors.swift in Sources */,
 				67FF47081FC558FA00420D6E /* QGTableViewCell.swift in Sources */,
+				676D7BD11FE36BFA00CC9470 /* QGBtnTagView.swift in Sources */,
+				676D7BE31FE3CDC900CC9470 /* QGCoursesListModel.swift in Sources */,
 				673B64681FC405EE0072D1ED /* QGMessageViewController.swift in Sources */,
 				67FF47011FC54EFE00420D6E /* Define.swift in Sources */,
+				673DDA6B1FC571110071A156 /* QGNetManager.swift in Sources */,
 				673B646A1FC4379B0072D1ED /* QGTabBarController.swift in Sources */,
 				673B64621FC4059A0072D1ED /* QGViewController.swift in Sources */,
+				676D7BDD1FE399B700CC9470 /* String+Ext.swift in Sources */,
+				67F8C0911FE1328F003AB977 /* QGHomeViewCell.swift in Sources */,
 				675A98AD1FC5280700BBEED2 /* QGNavigationController.swift in Sources */,
 				673B64251FC403C80072D1ED /* ViewController.swift in Sources */,
 				673B64231FC403C80072D1ED /* AppDelegate.swift in Sources */,
@@ -585,14 +711,17 @@
 		};
 		673B644B1FC403C80072D1ED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB25E11E2C4B1C940DEFE37B /* Pods-qiqiaoguoEdu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AUVDLZTKHF;
 				INFOPLIST_FILE = qiqiaoguoEdu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.qiqiaoguo.edu.qiqiaoguoEdu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -600,8 +729,10 @@
 		};
 		673B644C1FC403C80072D1ED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C704D16891CCE0C19E0D5E99 /* Pods-qiqiaoguoEdu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AUVDLZTKHF;
 				INFOPLIST_FILE = qiqiaoguoEdu/Info.plist;
