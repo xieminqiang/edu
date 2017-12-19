@@ -9,15 +9,27 @@
 import UIKit
 
 
+
 class QGHomeViewController: QGViewController {
-   
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         
         setupUI()
+      
+      downloadRepositories(50)
+       
   
     }
+    func downloadRepositories(_ username: Int) {
+        NetworkTool.loadHomeDetail(platformId: 50) { (result) in
+            print(result)
+        }
+        
+    }
+
+    
     fileprivate lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.separatorStyle = .none

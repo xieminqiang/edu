@@ -6,10 +6,13 @@
 //  Copyright © 2017年 xieminqiang. All rights reserved.
 //
 
+
+
 import Foundation
 import UIKit
 
 import SnapKit
+
 //颜色
 let QGColor_000000 = UIColor.init(hexString:"000000")
 let QGColor_333333 = UIColor.init(hexString:"333333")

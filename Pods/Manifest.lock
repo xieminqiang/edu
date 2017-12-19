@@ -2,15 +2,7 @@ PODS:
   - Alamofire (4.5.1)
   - Differentiator (3.0.2)
   - MJRefresh (3.1.15.1)
-  - Moya (10.0.1):
-    - Moya/Core (= 10.0.1)
-  - Moya/Core (10.0.1):
-    - Alamofire (~> 4.1)
-    - Result (~> 3.0)
-  - Moya/RxSwift (10.0.1):
-    - Moya/Core
-    - RxSwift (~> 4.0)
-  - Result (3.2.4)
+  - ObjectMapper (3.1.0)
   - RxCocoa (4.0.0):
     - RxSwift (~> 4.0)
   - RxDataSources (3.0.2):
@@ -24,35 +16,36 @@ PODS:
     - SDWebImage/Core (= 4.2.2)
   - SDWebImage/Core (4.2.2)
   - SnapKit (4.0.0)
+  - SVProgressHUD (2.2.2)
   - SwiftyJSON (4.0.0)
 
 DEPENDENCIES:
   - Alamofire
   - MJRefresh
-  - Moya
-  - Moya/RxSwift
-  - RxCocoa (~> 4.0)
+  - ObjectMapper
+  - RxCocoa
   - RxDataSources
-  - RxSwift (~> 4.0)
+  - RxSwift
   - SDCycleScrollView
   - SDWebImage
   - SnapKit
+  - SVProgressHUD
   - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
   MJRefresh: 5f8552bc25ca8751c010f621c1098dbdaacbccd6
-  Moya: 9e621707ff754eeb51ff3ec51a3d54e517c0733a
-  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
   RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
   RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
   RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
   SDCycleScrollView: f821215226f6146a35470721a9d6e83ec5cfb04b
   SDWebImage: 89a9d32cd520bbb46eb14e541d5109b3564af198
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  SVProgressHUD: 59b2d3dabacbd051576d21d32293ca7228dc18b0
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
-PODFILE CHECKSUM: 9500d59af86e09a35a0570220460c2afdfc8063f
+PODFILE CHECKSUM: ebc210db0fe2eed4d7121a6410e89d97366e6e91
 
 COCOAPODS: 1.3.1

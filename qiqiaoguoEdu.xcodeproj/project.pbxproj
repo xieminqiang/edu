@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		138FCF4E7C319B5F0AACEB11 /* Pods_qiqiaoguoEdu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB4450CF4F0DA25F751BB49 /* Pods_qiqiaoguoEdu.framework */; };
+		673B41541FE7AEC6009C43D3 /* QGHomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673B41531FE7AEC6009C43D3 /* QGHomeModel.swift */; };
+		673B415A1FE7BCDA009C43D3 /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673B41591FE7BCD9009C43D3 /* NetworkTool.swift */; };
 		673B64231FC403C80072D1ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673B64221FC403C80072D1ED /* AppDelegate.swift */; };
 		673B64251FC403C80072D1ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673B64241FC403C80072D1ED /* ViewController.swift */; };
 		673B642B1FC403C80072D1ED /* qiqiaoguoEdu.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 673B64291FC403C80072D1ED /* qiqiaoguoEdu.xcdatamodeld */; };
@@ -20,7 +22,7 @@
 		673B64661FC405DE0072D1ED /* QGMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673B64651FC405DE0072D1ED /* QGMeViewController.swift */; };
 		673B64681FC405EE0072D1ED /* QGMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673B64671FC405EE0072D1ED /* QGMessageViewController.swift */; };
 		673B646A1FC4379B0072D1ED /* QGTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673B64691FC4379B0072D1ED /* QGTabBarController.swift */; };
-		673DDA6B1FC571110071A156 /* QGNetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673DDA6A1FC571110071A156 /* QGNetManager.swift */; };
+		674AFEAF1FE8B2920054B390 /* QGHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674AFEAE1FE8B2920054B390 /* QGHomeViewModel.swift */; };
 		675A98AD1FC5280700BBEED2 /* QGNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675A98AC1FC5280700BBEED2 /* QGNavigationController.swift */; };
 		676D7BD11FE36BFA00CC9470 /* QGBtnTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676D7BD01FE36BFA00CC9470 /* QGBtnTagView.swift */; };
 		676D7BDD1FE399B700CC9470 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676D7BDC1FE399B700CC9470 /* String+Ext.swift */; };
@@ -52,6 +54,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		673B41531FE7AEC6009C43D3 /* QGHomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGHomeModel.swift; sourceTree = "<group>"; };
+		673B41591FE7BCD9009C43D3 /* NetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
 		673B641F1FC403C80072D1ED /* qiqiaoguoEdu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qiqiaoguoEdu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		673B64221FC403C80072D1ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		673B64241FC403C80072D1ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,7 +74,7 @@
 		673B64651FC405DE0072D1ED /* QGMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGMeViewController.swift; sourceTree = "<group>"; };
 		673B64671FC405EE0072D1ED /* QGMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGMessageViewController.swift; sourceTree = "<group>"; };
 		673B64691FC4379B0072D1ED /* QGTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGTabBarController.swift; sourceTree = "<group>"; };
-		673DDA6A1FC571110071A156 /* QGNetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGNetManager.swift; sourceTree = "<group>"; };
+		674AFEAE1FE8B2920054B390 /* QGHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGHomeViewModel.swift; sourceTree = "<group>"; };
 		675A98AC1FC5280700BBEED2 /* QGNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGNavigationController.swift; sourceTree = "<group>"; };
 		676D7BD01FE36BFA00CC9470 /* QGBtnTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGBtnTagView.swift; sourceTree = "<group>"; };
 		676D7BDC1FE399B700CC9470 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
@@ -119,6 +123,14 @@
 				EFB4450CF4F0DA25F751BB49 /* Pods_qiqiaoguoEdu.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		673B41501FE7ADCD009C43D3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				674AFEAE1FE8B2920054B390 /* QGHomeViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		673B64161FC403C80072D1ED = {
@@ -190,6 +202,7 @@
 		673B64541FC404F30072D1ED /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				673B41501FE7ADCD009C43D3 /* ViewModel */,
 				673B64551FC404F30072D1ED /* Controller */,
 				673B64561FC404F30072D1ED /* Model */,
 				673B64571FC404F30072D1ED /* View */,
@@ -208,6 +221,7 @@
 		673B64561FC404F30072D1ED /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				673B41531FE7AEC6009C43D3 /* QGHomeModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -314,7 +328,7 @@
 		67FF470B1FC566A800420D6E /* 网络请求 */ = {
 			isa = PBXGroup;
 			children = (
-				673DDA6A1FC571110071A156 /* QGNetManager.swift */,
+				673B41591FE7BCD9009C43D3 /* NetworkTool.swift */,
 			);
 			path = "网络请求";
 			sourceTree = "<group>";
@@ -488,13 +502,13 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
-				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
-				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SDCycleScrollView/SDCycleScrollView.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
@@ -503,13 +517,13 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDCycleScrollView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
@@ -543,8 +557,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				673B415A1FE7BCDA009C43D3 /* NetworkTool.swift in Sources */,
 				673B64661FC405DE0072D1ED /* QGMeViewController.swift in Sources */,
 				67FF470A1FC5591200420D6E /* QGTableView.swift in Sources */,
+				674AFEAF1FE8B2920054B390 /* QGHomeViewModel.swift in Sources */,
 				673B64641FC405CB0072D1ED /* QGHomeViewController.swift in Sources */,
 				67FF46FF1FC54EF500420D6E /* UIView+Ext.swift in Sources */,
 				67FF47051FC556D500420D6E /* SwiftHEXColors.swift in Sources */,
@@ -553,12 +569,12 @@
 				676D7BE31FE3CDC900CC9470 /* QGCoursesListModel.swift in Sources */,
 				673B64681FC405EE0072D1ED /* QGMessageViewController.swift in Sources */,
 				67FF47011FC54EFE00420D6E /* Define.swift in Sources */,
-				673DDA6B1FC571110071A156 /* QGNetManager.swift in Sources */,
 				673B646A1FC4379B0072D1ED /* QGTabBarController.swift in Sources */,
 				673B64621FC4059A0072D1ED /* QGViewController.swift in Sources */,
 				676D7BDD1FE399B700CC9470 /* String+Ext.swift in Sources */,
 				67F8C0911FE1328F003AB977 /* QGHomeViewCell.swift in Sources */,
 				675A98AD1FC5280700BBEED2 /* QGNavigationController.swift in Sources */,
+				673B41541FE7AEC6009C43D3 /* QGHomeModel.swift in Sources */,
 				673B64251FC403C80072D1ED /* ViewController.swift in Sources */,
 				673B64231FC403C80072D1ED /* AppDelegate.swift in Sources */,
 				673B642B1FC403C80072D1ED /* qiqiaoguoEdu.xcdatamodeld in Sources */,

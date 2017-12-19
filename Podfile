@@ -7,11 +7,9 @@ target 'qiqiaoguoEdu' do
  pod 'Alamofire'
  pod 'SwiftyJSON'
  pod 'MJRefresh'
- pod 'Moya'
- pod 'Moya/RxSwift'
- pod 'RxSwift','~>4.0'              # 响应式编程框架 https://github.com/ReactiveX/RxSwift
- pod 'RxCocoa','~>4.0'              # 响应式编程框架 https://github.com/ReactiveX/RxSwift
+ pod 'RxSwift'           # 响应式编程框架 https://github.com/ReactiveX/RxSwift
+ pod 'RxCocoa'             # 响应式编程框架 https://github.com/ReactiveX/RxSwift
  pod 'RxDataSources'                # 帮助我们优雅的使用tableView的数据源方法
-
-
+ pod 'ObjectMapper'
+ pod 'SVProgressHUD'              
 end
