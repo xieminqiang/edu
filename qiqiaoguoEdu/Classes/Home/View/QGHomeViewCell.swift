@@ -17,7 +17,7 @@ class QGHomeViewCell: UITableViewCell {
      var signLabel: UILabel!
      var adressLabel: UILabel!
      var adressIcon: UIImageView!
-     var dateArray = Array<Any>()
+ 
      var tagView = QGBtnTagView()
      var lineView: UIView!
      var ageName: UILabel!
@@ -29,11 +29,14 @@ class QGHomeViewCell: UITableViewCell {
      var lineView0: UIView!
       var lineView1: UIView!
       var priceText: UILabel!
+
+    
     override init(style: UITableViewCellStyle, reuseIdentifier: String?)
     {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         coursesIcon = UIImageView.init()
-  
+        coursesIcon.contentMode = UIViewContentMode.scaleAspectFill
+        coursesIcon.clipsToBounds = true
         nameLabel = UILabel.init()
         nameLabel.textColor = QGColor_333333
         nameLabel.font = UIFont.systemFont(ofSize: 16)
@@ -90,12 +93,12 @@ class QGHomeViewCell: UITableViewCell {
         priceText.textColor = QGColor_red
         priceText.font = UIFont.boldSystemFont(ofSize: 17)
         contentView.addSubview(priceText)
-        coursesIcon.addSubview(timeText)
+        contentView.addSubview(timeText)
         contentView.addSubview(timeName)
 
-        coursesIcon.addSubview(organText)
+        contentView.addSubview(organText)
         contentView.addSubview(organName)
-        coursesIcon.addSubview(ageText)
+        contentView.addSubview(ageText)
         contentView.addSubview(ageName)
         contentView.addSubview(lineView)
         contentView.addSubview(adressIcon)
@@ -106,12 +109,13 @@ class QGHomeViewCell: UITableViewCell {
         contentView.addSubview(nameLabel)
 
         
+
         coursesIcon.snp.makeConstraints { (make) in
             make.left.equalTo(QGScreenMargin)
             make.height.equalTo( fixW(floatWidth: 145) * 0.625)
             make.top.equalTo( QGMarginH*3)
             make.width.equalTo(fixW(floatWidth: 145) )
-          
+
         }
         
         nameLabel.snp.makeConstraints { (make) in
@@ -208,18 +212,25 @@ class QGHomeViewCell: UITableViewCell {
     }
     
     func sendModel(model: QGCoursesListModel) {
-   
+        
+        for son in tagView.subviews {
+            son.removeFromSuperview()
+        }
+        
         adressIcon.image = UIImage.init(named: "address_icon")
-        adressLabel.text = "广东深圳福田区"
-        tagView.creatButton(dataArr: ["ss","sss22"])
-        coursesIcon.image = UIImage.init(named: "ic_video")
-        nameLabel.text = "吉他-木吉他初级弹"
-        signLabel.text = "刘文涛  3年"
-        ageText.text = "5岁以上"
-        organText.text = "小白鸽培训机构"
-        timeText.text = "5月3日 09：00-7月12日"
-        priceText.text = "免费"
-            print("5ffff",lineView1.maxY)
+        adressLabel.text = model.address
+        tagView.creatButton(dataArr: model.tagList)
+        coursesIcon.kf.setImage(with: URL(string:model.coverURL!))
+        nameLabel.text = model.title
+        let str = NSString.init(format: "  %d年教龄", model.teacher_experience!)
+        signLabel.text = model.teacher_name! + (str as String)
+        ageText.text = model.student_range
+        organText.text = model.org_name
+        timeText.text = model.section
+        let price:String = "¥ "
+        priceText.text = price + model.class_price!
+        print(model.tagList as Any)
+        
     }
     required init(coder aDecoder: NSCoder)
     {

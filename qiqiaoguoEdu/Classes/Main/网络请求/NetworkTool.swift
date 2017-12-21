@@ -9,7 +9,8 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
-import SVProgressHUD
+import Moya
+//import SVProgressHUD
 //import SVProgressHUD
 let BASE_URL = "http://api.edu.qiqiaoguo.com/Phone"
 

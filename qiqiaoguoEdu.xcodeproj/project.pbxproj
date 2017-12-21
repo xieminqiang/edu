@@ -22,8 +22,13 @@
 		673B64661FC405DE0072D1ED /* QGMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673B64651FC405DE0072D1ED /* QGMeViewController.swift */; };
 		673B64681FC405EE0072D1ED /* QGMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673B64671FC405EE0072D1ED /* QGMessageViewController.swift */; };
 		673B646A1FC4379B0072D1ED /* QGTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673B64691FC4379B0072D1ED /* QGTabBarController.swift */; };
+		673D80E41FEA099700E760F6 /* QGNetAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673D80E31FEA099700E760F6 /* QGNetAPI.swift */; };
+		673D80E61FEA127500E760F6 /* QGHomeRepositoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673D80E51FEA127500E760F6 /* QGHomeRepositoryModel.swift */; };
+		674A36AB1FEB53FD00CC48DA /* QGTaglistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674A36AA1FEB53FD00CC48DA /* QGTaglistModel.swift */; };
+		674A36AD1FEB837400CC48DA /* QGBannerListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674A36AC1FEB837400CC48DA /* QGBannerListModel.swift */; };
 		674AFEAF1FE8B2920054B390 /* QGHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674AFEAE1FE8B2920054B390 /* QGHomeViewModel.swift */; };
 		675A98AD1FC5280700BBEED2 /* QGNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675A98AC1FC5280700BBEED2 /* QGNavigationController.swift */; };
+		676B3EF21FEB9BA900846B1E /* QGCateListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676B3EF11FEB9BA900846B1E /* QGCateListModel.swift */; };
 		676D7BD11FE36BFA00CC9470 /* QGBtnTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676D7BD01FE36BFA00CC9470 /* QGBtnTagView.swift */; };
 		676D7BDD1FE399B700CC9470 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676D7BDC1FE399B700CC9470 /* String+Ext.swift */; };
 		676D7BE31FE3CDC900CC9470 /* QGCoursesListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676D7BE21FE3CDC900CC9470 /* QGCoursesListModel.swift */; };
@@ -74,8 +79,13 @@
 		673B64651FC405DE0072D1ED /* QGMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGMeViewController.swift; sourceTree = "<group>"; };
 		673B64671FC405EE0072D1ED /* QGMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGMessageViewController.swift; sourceTree = "<group>"; };
 		673B64691FC4379B0072D1ED /* QGTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGTabBarController.swift; sourceTree = "<group>"; };
+		673D80E31FEA099700E760F6 /* QGNetAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGNetAPI.swift; sourceTree = "<group>"; };
+		673D80E51FEA127500E760F6 /* QGHomeRepositoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QGHomeRepositoryModel.swift; sourceTree = "<group>"; };
+		674A36AA1FEB53FD00CC48DA /* QGTaglistModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGTaglistModel.swift; sourceTree = "<group>"; };
+		674A36AC1FEB837400CC48DA /* QGBannerListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGBannerListModel.swift; sourceTree = "<group>"; };
 		674AFEAE1FE8B2920054B390 /* QGHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGHomeViewModel.swift; sourceTree = "<group>"; };
 		675A98AC1FC5280700BBEED2 /* QGNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGNavigationController.swift; sourceTree = "<group>"; };
+		676B3EF11FEB9BA900846B1E /* QGCateListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGCateListModel.swift; sourceTree = "<group>"; };
 		676D7BD01FE36BFA00CC9470 /* QGBtnTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGBtnTagView.swift; sourceTree = "<group>"; };
 		676D7BDC1FE399B700CC9470 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		676D7BE21FE3CDC900CC9470 /* QGCoursesListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGCoursesListModel.swift; sourceTree = "<group>"; };
@@ -221,6 +231,11 @@
 		673B64561FC404F30072D1ED /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				673D80E51FEA127500E760F6 /* QGHomeRepositoryModel.swift */,
+				676D7BE21FE3CDC900CC9470 /* QGCoursesListModel.swift */,
+				674A36AC1FEB837400CC48DA /* QGBannerListModel.swift */,
+				676B3EF11FEB9BA900846B1E /* QGCateListModel.swift */,
+				674A36AA1FEB53FD00CC48DA /* QGTaglistModel.swift */,
 				673B41531FE7AEC6009C43D3 /* QGHomeModel.swift */,
 			);
 			path = Model;
@@ -231,7 +246,6 @@
 			children = (
 				67F8C0901FE1328F003AB977 /* QGHomeViewCell.swift */,
 				676D7BD01FE36BFA00CC9470 /* QGBtnTagView.swift */,
-				676D7BE21FE3CDC900CC9470 /* QGCoursesListModel.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -329,6 +343,7 @@
 			isa = PBXGroup;
 			children = (
 				673B41591FE7BCD9009C43D3 /* NetworkTool.swift */,
+				673D80E31FEA099700E760F6 /* QGNetAPI.swift */,
 			);
 			path = "网络请求";
 			sourceTree = "<group>";
@@ -500,30 +515,30 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-qiqiaoguoEdu/Pods-qiqiaoguoEdu-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya-ObjectMapper/Moya_ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SDCycleScrollView/SDCycleScrollView.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya_ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDCycleScrollView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
@@ -559,10 +574,13 @@
 			files = (
 				673B415A1FE7BCDA009C43D3 /* NetworkTool.swift in Sources */,
 				673B64661FC405DE0072D1ED /* QGMeViewController.swift in Sources */,
+				676B3EF21FEB9BA900846B1E /* QGCateListModel.swift in Sources */,
 				67FF470A1FC5591200420D6E /* QGTableView.swift in Sources */,
 				674AFEAF1FE8B2920054B390 /* QGHomeViewModel.swift in Sources */,
 				673B64641FC405CB0072D1ED /* QGHomeViewController.swift in Sources */,
+				673D80E61FEA127500E760F6 /* QGHomeRepositoryModel.swift in Sources */,
 				67FF46FF1FC54EF500420D6E /* UIView+Ext.swift in Sources */,
+				673D80E41FEA099700E760F6 /* QGNetAPI.swift in Sources */,
 				67FF47051FC556D500420D6E /* SwiftHEXColors.swift in Sources */,
 				67FF47081FC558FA00420D6E /* QGTableViewCell.swift in Sources */,
 				676D7BD11FE36BFA00CC9470 /* QGBtnTagView.swift in Sources */,
@@ -571,8 +589,10 @@
 				67FF47011FC54EFE00420D6E /* Define.swift in Sources */,
 				673B646A1FC4379B0072D1ED /* QGTabBarController.swift in Sources */,
 				673B64621FC4059A0072D1ED /* QGViewController.swift in Sources */,
+				674A36AB1FEB53FD00CC48DA /* QGTaglistModel.swift in Sources */,
 				676D7BDD1FE399B700CC9470 /* String+Ext.swift in Sources */,
 				67F8C0911FE1328F003AB977 /* QGHomeViewCell.swift in Sources */,
+				674A36AD1FEB837400CC48DA /* QGBannerListModel.swift in Sources */,
 				675A98AD1FC5280700BBEED2 /* QGNavigationController.swift in Sources */,
 				673B41541FE7AEC6009C43D3 /* QGHomeModel.swift in Sources */,
 				673B64251FC403C80072D1ED /* ViewController.swift in Sources */,

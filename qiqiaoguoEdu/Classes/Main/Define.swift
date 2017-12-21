@@ -9,9 +9,13 @@
 
 
 import Foundation
-import UIKit
 
+import ObjectMapper
 import SnapKit
+import Kingfisher
+import RxSwift
+import Moya
+import Moya_ObjectMapper
 
 //颜色
 let QGColor_000000 = UIColor.init(hexString:"000000")

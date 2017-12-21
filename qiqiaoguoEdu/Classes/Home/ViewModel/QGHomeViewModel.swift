@@ -9,9 +9,10 @@
 import UIKit
 import RxSwift
 class QGHomeViewModel {
-//    func loadHomeDetail(platformId: Int) ->  Observable<QGHomeModel>{
-//        return NetworkTool.loadHomeDetail(platformId: platformId, completionHandler: { (<#QGHomeModel#>) in
-//            
-//        })
+ //   func loadHomeDetail(platformId: Int) ->  Observable<QGHomeModel>{
+       
+//        return gitHubProvider.rx.request(.loadHomeData(50))
+//              .mapObject(RepositoryModel.self)
+        
 //    }
 }

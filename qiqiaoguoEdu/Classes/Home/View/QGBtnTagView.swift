@@ -17,18 +17,13 @@ class QGBtnTagView: UIView {
   
 
     //添加子控制器
-    func creatButton(dataArr:Array<String>)   {
-   
+    func creatButton(dataArr:[QGTaglistModel]?)   {
         
         var upX: CGFloat = 0.0
-        for i in 0..<dataArr.count {
-           let str: String = dataArr[i]
-
+        for i in dataArr! {
+            let str: String = i.tag_name!
             let sizeW:CGFloat = str.stringWithConstrainedWidth(height: QGBtnTagViewH, font:UIFont.boldSystemFont(ofSize: 14))
-            ////NSLog(@"%f",size.height);
-         
             let btn: UIButton = UIButton(type: .custom)
-      
             btn.frame = CGRect(x: upX, y: 0, width: sizeW+10, height:QGBtnTagViewH)
             btn.layer.borderWidth = 1
             btn.layer.borderColor = QGlineBackgroundColor?.cgColor
