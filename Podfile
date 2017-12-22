@@ -13,4 +13,5 @@ target 'qiqiaoguoEdu' do
  pod 'Moya'
  pod 'RxSwift'
  pod 'SVProgressHUD'                 # 提示功能 https://github.com/SVProgressHUD/SVProgressHUD
+ pod 'WRNavigationBar_swift'
 end

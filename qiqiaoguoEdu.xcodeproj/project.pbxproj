@@ -8,13 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		138FCF4E7C319B5F0AACEB11 /* Pods_qiqiaoguoEdu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB4450CF4F0DA25F751BB49 /* Pods_qiqiaoguoEdu.framework */; };
+		671C41581FED1DE0001451AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 671C41571FED1DE0001451AD /* LaunchScreen.storyboard */; };
 		673B41541FE7AEC6009C43D3 /* QGHomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673B41531FE7AEC6009C43D3 /* QGHomeModel.swift */; };
 		673B415A1FE7BCDA009C43D3 /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673B41591FE7BCD9009C43D3 /* NetworkTool.swift */; };
 		673B64231FC403C80072D1ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673B64221FC403C80072D1ED /* AppDelegate.swift */; };
 		673B64251FC403C80072D1ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673B64241FC403C80072D1ED /* ViewController.swift */; };
-		673B642B1FC403C80072D1ED /* qiqiaoguoEdu.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 673B64291FC403C80072D1ED /* qiqiaoguoEdu.xcdatamodeld */; };
 		673B642D1FC403C80072D1ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 673B642C1FC403C80072D1ED /* Assets.xcassets */; };
-		673B64301FC403C80072D1ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 673B642E1FC403C80072D1ED /* LaunchScreen.storyboard */; };
 		673B643B1FC403C80072D1ED /* qiqiaoguoEduTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673B643A1FC403C80072D1ED /* qiqiaoguoEduTests.swift */; };
 		673B64461FC403C80072D1ED /* qiqiaoguoEduUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673B64451FC403C80072D1ED /* qiqiaoguoEduUITests.swift */; };
 		673B64621FC4059A0072D1ED /* QGViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673B64611FC4059A0072D1ED /* QGViewController.swift */; };
@@ -26,6 +25,10 @@
 		673D80E61FEA127500E760F6 /* QGHomeRepositoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673D80E51FEA127500E760F6 /* QGHomeRepositoryModel.swift */; };
 		674890E81FEC90F7003D3823 /* QGHomeHeardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674890E71FEC90F7003D3823 /* QGHomeHeardView.swift */; };
 		674890EA1FEC9F9E003D3823 /* QGNearCourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674890E91FEC9F9E003D3823 /* QGNearCourseCell.swift */; };
+		674890EE1FECD762003D3823 /* WRCustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674890EC1FECD762003D3823 /* WRCustomNavigationBar.swift */; };
+		674890EF1FECD762003D3823 /* WRNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674890ED1FECD762003D3823 /* WRNavigationBar.swift */; };
+		674890F31FECE08E003D3823 /* QGNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674890F21FECE08E003D3823 /* QGNavView.swift */; };
+		674890F51FECE3A9003D3823 /* QGTitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674890F41FECE3A9003D3823 /* QGTitleButton.swift */; };
 		674A36AB1FEB53FD00CC48DA /* QGTaglistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674A36AA1FEB53FD00CC48DA /* QGTaglistModel.swift */; };
 		674A36AD1FEB837400CC48DA /* QGBannerListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674A36AC1FEB837400CC48DA /* QGBannerListModel.swift */; };
 		674AFEAF1FE8B2920054B390 /* QGHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674AFEAE1FE8B2920054B390 /* QGHomeViewModel.swift */; };
@@ -63,14 +66,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		671C41571FED1DE0001451AD /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		673B41531FE7AEC6009C43D3 /* QGHomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGHomeModel.swift; sourceTree = "<group>"; };
 		673B41591FE7BCD9009C43D3 /* NetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
 		673B641F1FC403C80072D1ED /* qiqiaoguoEdu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qiqiaoguoEdu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		673B64221FC403C80072D1ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		673B64241FC403C80072D1ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		673B642A1FC403C80072D1ED /* qiqiaoguoEdu.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = qiqiaoguoEdu.xcdatamodel; sourceTree = "<group>"; };
 		673B642C1FC403C80072D1ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		673B642F1FC403C80072D1ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		673B64311FC403C80072D1ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		673B64361FC403C80072D1ED /* qiqiaoguoEduTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = qiqiaoguoEduTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		673B643A1FC403C80072D1ED /* qiqiaoguoEduTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = qiqiaoguoEduTests.swift; sourceTree = "<group>"; };
@@ -87,6 +89,10 @@
 		673D80E51FEA127500E760F6 /* QGHomeRepositoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QGHomeRepositoryModel.swift; sourceTree = "<group>"; };
 		674890E71FEC90F7003D3823 /* QGHomeHeardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGHomeHeardView.swift; sourceTree = "<group>"; };
 		674890E91FEC9F9E003D3823 /* QGNearCourseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGNearCourseCell.swift; sourceTree = "<group>"; };
+		674890EC1FECD762003D3823 /* WRCustomNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRCustomNavigationBar.swift; sourceTree = "<group>"; };
+		674890ED1FECD762003D3823 /* WRNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRNavigationBar.swift; sourceTree = "<group>"; };
+		674890F21FECE08E003D3823 /* QGNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGNavView.swift; sourceTree = "<group>"; };
+		674890F41FECE3A9003D3823 /* QGTitleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGTitleButton.swift; sourceTree = "<group>"; };
 		674A36AA1FEB53FD00CC48DA /* QGTaglistModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGTaglistModel.swift; sourceTree = "<group>"; };
 		674A36AC1FEB837400CC48DA /* QGBannerListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGBannerListModel.swift; sourceTree = "<group>"; };
 		674AFEAE1FE8B2920054B390 /* QGHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGHomeViewModel.swift; sourceTree = "<group>"; };
@@ -178,12 +184,11 @@
 			children = (
 				673B64531FC404F30072D1ED /* Classes */,
 				673B64221FC403C80072D1ED /* AppDelegate.swift */,
+				671C41571FED1DE0001451AD /* LaunchScreen.storyboard */,
 				673B64241FC403C80072D1ED /* ViewController.swift */,
 				67FF46FC1FC52DA100420D6E /* Main.storyboard */,
 				673B642C1FC403C80072D1ED /* Assets.xcassets */,
-				673B642E1FC403C80072D1ED /* LaunchScreen.storyboard */,
 				673B64311FC403C80072D1ED /* Info.plist */,
-				673B64291FC403C80072D1ED /* qiqiaoguoEdu.xcdatamodeld */,
 			);
 			path = qiqiaoguoEdu;
 			sourceTree = "<group>";
@@ -258,6 +263,8 @@
 				674890E91FEC9F9E003D3823 /* QGNearCourseCell.swift */,
 				676D7BD01FE36BFA00CC9470 /* QGBtnTagView.swift */,
 				676B3EF31FEB9E2700846B1E /* QGCateListView.swift */,
+				674890F21FECE08E003D3823 /* QGNavView.swift */,
+				674890F41FECE3A9003D3823 /* QGTitleButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -265,6 +272,7 @@
 		673B64581FC404F30072D1ED /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				674890EB1FECD759003D3823 /* lib */,
 				67FF470B1FC566A800420D6E /* 网络请求 */,
 				67FF47061FC558C100420D6E /* View */,
 				673B64611FC4059A0072D1ED /* QGViewController.swift */,
@@ -340,6 +348,15 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		674890EB1FECD759003D3823 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				674890EC1FECD762003D3823 /* WRCustomNavigationBar.swift */,
+				674890ED1FECD762003D3823 /* WRNavigationBar.swift */,
+			);
+			path = lib;
 			sourceTree = "<group>";
 		};
 		67FF47061FC558C100420D6E /* View */ = {
@@ -481,8 +498,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				671C41581FED1DE0001451AD /* LaunchScreen.storyboard in Resources */,
 				67FF46FD1FC52DA100420D6E /* Main.storyboard in Resources */,
-				673B64301FC403C80072D1ED /* LaunchScreen.storyboard in Resources */,
 				673B642D1FC403C80072D1ED /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -593,13 +610,16 @@
 				674AFEAF1FE8B2920054B390 /* QGHomeViewModel.swift in Sources */,
 				673B64641FC405CB0072D1ED /* QGHomeViewController.swift in Sources */,
 				673D80E61FEA127500E760F6 /* QGHomeRepositoryModel.swift in Sources */,
+				674890F31FECE08E003D3823 /* QGNavView.swift in Sources */,
 				67FF46FF1FC54EF500420D6E /* UIView+Ext.swift in Sources */,
 				673D80E41FEA099700E760F6 /* QGNetAPI.swift in Sources */,
 				67FF47051FC556D500420D6E /* SwiftHEXColors.swift in Sources */,
 				67FF47081FC558FA00420D6E /* QGTableViewCell.swift in Sources */,
 				676D7BD11FE36BFA00CC9470 /* QGBtnTagView.swift in Sources */,
 				676D7BE31FE3CDC900CC9470 /* QGCoursesListModel.swift in Sources */,
+				674890F51FECE3A9003D3823 /* QGTitleButton.swift in Sources */,
 				673B64681FC405EE0072D1ED /* QGMessageViewController.swift in Sources */,
+				674890EE1FECD762003D3823 /* WRCustomNavigationBar.swift in Sources */,
 				67FF47011FC54EFE00420D6E /* Define.swift in Sources */,
 				673B646A1FC4379B0072D1ED /* QGTabBarController.swift in Sources */,
 				673B64621FC4059A0072D1ED /* QGViewController.swift in Sources */,
@@ -615,7 +635,7 @@
 				676B3EF61FEB9FD300846B1E /* QGCateListCollectionViewCell.swift in Sources */,
 				673B64231FC403C80072D1ED /* AppDelegate.swift in Sources */,
 				674890E81FEC90F7003D3823 /* QGHomeHeardView.swift in Sources */,
-				673B642B1FC403C80072D1ED /* qiqiaoguoEdu.xcdatamodeld in Sources */,
+				674890EF1FECD762003D3823 /* WRNavigationBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -649,17 +669,6 @@
 			targetProxy = 673B64421FC403C80072D1ED /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		673B642E1FC403C80072D1ED /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				673B642F1FC403C80072D1ED /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		673B64481FC403C80072D1ED /* Debug */ = {
@@ -910,19 +919,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		673B64291FC403C80072D1ED /* qiqiaoguoEdu.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				673B642A1FC403C80072D1ED /* qiqiaoguoEdu.xcdatamodel */,
-			);
-			currentVersion = 673B642A1FC403C80072D1ED /* qiqiaoguoEdu.xcdatamodel */;
-			path = qiqiaoguoEdu.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 673B64171FC403C80072D1ED /* Project object */;
 }

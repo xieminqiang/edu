@@ -112,9 +112,9 @@ class QGCoursesListCell: UITableViewCell {
 
         coursesIcon.snp.makeConstraints { (make) in
             make.left.equalTo(QGScreenMargin)
-            make.height.equalTo( fixW(floatWidth: 145) * 0.625)
+            make.height.equalTo( 145 * 0.625)
             make.top.equalTo( QGMarginH*3)
-            make.width.equalTo(fixW(floatWidth: 145) )
+            make.width.equalTo(145)
 
         }
         
