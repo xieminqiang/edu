@@ -10,6 +10,7 @@ import UIKit
 import SDCycleScrollView
 class QGHomeHeardView: UIView {
     var catList = [QGCateListModel]()
+
     lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout.init()
         layout.itemSize = .init(width:Screen_width/4, height: fixH(floatHeight:90))
@@ -33,11 +34,11 @@ class QGHomeHeardView: UIView {
         
         
     }()
-    
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.addSubview(cycleScrollView)
-         self.addSubview(collectionView)
+        self.addSubview(collectionView)
         cycleScrollView.snp.makeConstraints { (make) in
            make.left.right.top.equalTo(self)
            make.height.equalTo(Screen_width*0.628)
@@ -47,6 +48,7 @@ class QGHomeHeardView: UIView {
             make.left.right.equalTo(self)
             make.bottom.equalTo(self).offset(0)
         }
+    
         
     }
     func catlittModel(model:[QGCateListModel]) {

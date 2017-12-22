@@ -1,5 +1,5 @@
 //
-//  QGHomeViewCell.swift
+//  QGCoursesListCell.swift
 //  qiqiaoguoEdu
 //
 //  Created by xieminqiang on 2017/12/13.
@@ -11,7 +11,7 @@ import UIKit
 let viewFont:UIFont = UIFont.systemFont(ofSize: 12)
 
 
-class QGHomeViewCell: UITableViewCell {
+class QGCoursesListCell: UITableViewCell {
      var coursesIcon: UIImageView!
      var nameLabel: UILabel!
      var signLabel: UILabel!

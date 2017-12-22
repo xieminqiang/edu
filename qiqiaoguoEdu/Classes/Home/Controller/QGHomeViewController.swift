@@ -9,12 +9,14 @@
 import UIKit
 import RxSwift
 import SDCycleScrollView
+
 class QGHomeViewController: QGViewController {
     var dateModel:QGHomeRepositoryModel!
     let disposeBag = DisposeBag()
     var coursesModel = [QGCoursesListModel]()
     var bannerModel = [QGBannerListModel]()
     var cateListModel = [QGCateListModel]()
+
     
 
     override func viewDidLoad() {
@@ -65,7 +67,8 @@ class QGHomeViewController: QGViewController {
         tableView.delegate = self
         tableView.backgroundColor = QGAPPBackgroundColor;
         tableView.contentInset = UIEdgeInsetsMake(0, 0, -10, 0)
-        tableView.register(QGHomeViewCell.classForCoder() , forCellReuseIdentifier: "cellIdentity")
+        tableView.register(QGNearCourseCell.classForCoder() , forCellReuseIdentifier: "QGNearCourseCell")
+        tableView.register(QGCoursesListCell.classForCoder() , forCellReuseIdentifier: "QGCoursesListCell")
         return tableView
     }()
     
@@ -81,18 +84,38 @@ class QGHomeViewController: QGViewController {
 
 
 extension QGHomeViewController: UITableViewDataSource, UITableViewDelegate {
- 
+   
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       
-        return self.coursesModel.count
+        
+        if section == 0 {
+            return 0
+        } else {
+            return self.coursesModel.count
+        }
+        
+      
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
-     let cell = tableView.dequeueReusableCell(withIdentifier: "cellIdentity") as!  QGHomeViewCell
-        showQGHomeViewCell(indexPath: indexPath, cell: cell)
-        return cell
+   
+      
+        
+        
+        if indexPath.row == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "QGNearCourseCell") as!  QGNearCourseCell
+            return cell
+        } else {
+            let ListCell = tableView.dequeueReusableCell(withIdentifier: "QGCoursesListCell") as!  QGCoursesListCell
+            showQGCoursesListCell(indexPath: indexPath, cell: ListCell)
+            return ListCell
+        }
+        
+       
     }
-    private func showQGHomeViewCell(indexPath: IndexPath,cell: QGHomeViewCell) {
+    private func showQGCoursesListCell(indexPath: IndexPath,cell: QGCoursesListCell) {
         let repo = coursesModel[(indexPath as NSIndexPath).row]
 
        cell.sendModel(model: repo)

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SDWebImage
+
 class QGCateListCollectionViewCell: UICollectionViewCell {
     var cateIcon = UIImageView()
     var cateName = UILabel()
