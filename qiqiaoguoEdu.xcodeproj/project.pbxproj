@@ -24,11 +24,14 @@
 		673B646A1FC4379B0072D1ED /* QGTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673B64691FC4379B0072D1ED /* QGTabBarController.swift */; };
 		673D80E41FEA099700E760F6 /* QGNetAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673D80E31FEA099700E760F6 /* QGNetAPI.swift */; };
 		673D80E61FEA127500E760F6 /* QGHomeRepositoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673D80E51FEA127500E760F6 /* QGHomeRepositoryModel.swift */; };
+		674890E81FEC90F7003D3823 /* QGHomeHeardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674890E71FEC90F7003D3823 /* QGHomeHeardView.swift */; };
 		674A36AB1FEB53FD00CC48DA /* QGTaglistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674A36AA1FEB53FD00CC48DA /* QGTaglistModel.swift */; };
 		674A36AD1FEB837400CC48DA /* QGBannerListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674A36AC1FEB837400CC48DA /* QGBannerListModel.swift */; };
 		674AFEAF1FE8B2920054B390 /* QGHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674AFEAE1FE8B2920054B390 /* QGHomeViewModel.swift */; };
 		675A98AD1FC5280700BBEED2 /* QGNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675A98AC1FC5280700BBEED2 /* QGNavigationController.swift */; };
 		676B3EF21FEB9BA900846B1E /* QGCateListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676B3EF11FEB9BA900846B1E /* QGCateListModel.swift */; };
+		676B3EF41FEB9E2700846B1E /* QGCateListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676B3EF31FEB9E2700846B1E /* QGCateListView.swift */; };
+		676B3EF61FEB9FD300846B1E /* QGCateListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676B3EF51FEB9FD300846B1E /* QGCateListCollectionViewCell.swift */; };
 		676D7BD11FE36BFA00CC9470 /* QGBtnTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676D7BD01FE36BFA00CC9470 /* QGBtnTagView.swift */; };
 		676D7BDD1FE399B700CC9470 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676D7BDC1FE399B700CC9470 /* String+Ext.swift */; };
 		676D7BE31FE3CDC900CC9470 /* QGCoursesListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676D7BE21FE3CDC900CC9470 /* QGCoursesListModel.swift */; };
@@ -81,11 +84,14 @@
 		673B64691FC4379B0072D1ED /* QGTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGTabBarController.swift; sourceTree = "<group>"; };
 		673D80E31FEA099700E760F6 /* QGNetAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGNetAPI.swift; sourceTree = "<group>"; };
 		673D80E51FEA127500E760F6 /* QGHomeRepositoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QGHomeRepositoryModel.swift; sourceTree = "<group>"; };
+		674890E71FEC90F7003D3823 /* QGHomeHeardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGHomeHeardView.swift; sourceTree = "<group>"; };
 		674A36AA1FEB53FD00CC48DA /* QGTaglistModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGTaglistModel.swift; sourceTree = "<group>"; };
 		674A36AC1FEB837400CC48DA /* QGBannerListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGBannerListModel.swift; sourceTree = "<group>"; };
 		674AFEAE1FE8B2920054B390 /* QGHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGHomeViewModel.swift; sourceTree = "<group>"; };
 		675A98AC1FC5280700BBEED2 /* QGNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGNavigationController.swift; sourceTree = "<group>"; };
 		676B3EF11FEB9BA900846B1E /* QGCateListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGCateListModel.swift; sourceTree = "<group>"; };
+		676B3EF31FEB9E2700846B1E /* QGCateListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGCateListView.swift; sourceTree = "<group>"; };
+		676B3EF51FEB9FD300846B1E /* QGCateListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGCateListCollectionViewCell.swift; sourceTree = "<group>"; };
 		676D7BD01FE36BFA00CC9470 /* QGBtnTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGBtnTagView.swift; sourceTree = "<group>"; };
 		676D7BDC1FE399B700CC9470 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		676D7BE21FE3CDC900CC9470 /* QGCoursesListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGCoursesListModel.swift; sourceTree = "<group>"; };
@@ -244,8 +250,11 @@
 		673B64571FC404F30072D1ED /* View */ = {
 			isa = PBXGroup;
 			children = (
+				674890E71FEC90F7003D3823 /* QGHomeHeardView.swift */,
 				67F8C0901FE1328F003AB977 /* QGHomeViewCell.swift */,
 				676D7BD01FE36BFA00CC9470 /* QGBtnTagView.swift */,
+				676B3EF31FEB9E2700846B1E /* QGCateListView.swift */,
+				676B3EF51FEB9FD300846B1E /* QGCateListCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -589,6 +598,7 @@
 				67FF47011FC54EFE00420D6E /* Define.swift in Sources */,
 				673B646A1FC4379B0072D1ED /* QGTabBarController.swift in Sources */,
 				673B64621FC4059A0072D1ED /* QGViewController.swift in Sources */,
+				676B3EF41FEB9E2700846B1E /* QGCateListView.swift in Sources */,
 				674A36AB1FEB53FD00CC48DA /* QGTaglistModel.swift in Sources */,
 				676D7BDD1FE399B700CC9470 /* String+Ext.swift in Sources */,
 				67F8C0911FE1328F003AB977 /* QGHomeViewCell.swift in Sources */,
@@ -596,7 +606,9 @@
 				675A98AD1FC5280700BBEED2 /* QGNavigationController.swift in Sources */,
 				673B41541FE7AEC6009C43D3 /* QGHomeModel.swift in Sources */,
 				673B64251FC403C80072D1ED /* ViewController.swift in Sources */,
+				676B3EF61FEB9FD300846B1E /* QGCateListCollectionViewCell.swift in Sources */,
 				673B64231FC403C80072D1ED /* AppDelegate.swift in Sources */,
+				674890E81FEC90F7003D3823 /* QGHomeHeardView.swift in Sources */,
 				673B642B1FC403C80072D1ED /* qiqiaoguoEdu.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

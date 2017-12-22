@@ -229,7 +229,7 @@ class QGHomeViewCell: UITableViewCell {
         timeText.text = model.section
         let price:String = "¥ "
         priceText.text = price + model.class_price!
-        print(model.tagList as Any)
+      
         
     }
     required init(coder aDecoder: NSCoder)

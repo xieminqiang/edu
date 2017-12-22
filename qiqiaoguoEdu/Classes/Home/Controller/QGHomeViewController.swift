@@ -18,9 +18,7 @@ class QGHomeViewController: QGViewController {
     
 
     override func viewDidLoad() {
-        super.viewDidLoad()
-
- 
+      super.viewDidLoad()
       setupUI()
       downloadRepositories(50)
       
@@ -37,7 +35,7 @@ class QGHomeViewController: QGViewController {
             case .error(let error):
                 print(error)
             }
-            self.tableView.reloadData()
+       
             }.disposed(by: disposeBag)
  
     }
@@ -49,7 +47,14 @@ class QGHomeViewController: QGViewController {
         for kk in  dataModel.BannerList {
             bannerArr.append(kk.cover!)
         }
-        self.cycleScrollView.imageURLStringsGroup = bannerArr
+
+         self.heardView.cycleScrollView.imageURLStringsGroup = bannerArr
+         self.heardView.catlittModel(model: dataModel.CateList)
+        if dataModel.CateList.count>4 {
+            heardView.frame =  CGRect.init(x: 0, y: 0, width:  view.width, height: Screen_width*0.625 + fixH(floatHeight: 200))
+        }
+      
+        self.tableView.reloadData()
     }
     
     
@@ -64,19 +69,14 @@ class QGHomeViewController: QGViewController {
         return tableView
     }()
     
-    fileprivate lazy var cycleScrollView: SDCycleScrollView = {
-        
-        let cycleScrollView = SDCycleScrollView()
-        cycleScrollView.frame = CGRect.init(x: 0, y: 0, width: view.width, height: view.width * 0.628)
-        cycleScrollView.autoScrollTimeInterval = 3
-        cycleScrollView.pageControlDotSize = CGSize.init(width: 5, height: 5)
-        return cycleScrollView
-        
-        
+
+    fileprivate lazy var heardView:QGHomeHeardView = {
+        let heardView = QGHomeHeardView()
+        heardView.frame =  CGRect.init(x: 0, y: 0, width:  view.width, height: Screen_width*0.625 + fixH(floatHeight:110))
+        heardView.backgroundColor = UIColor.white
+        return heardView
     }()
     
-    
-
 }
 
 
@@ -103,16 +103,17 @@ extension QGHomeViewController: UITableViewDataSource, UITableViewDelegate {
 extension  QGHomeViewController {
     
     fileprivate func setupUI() {
-     view.addSubview(tableView)
-        tableView.snp.makeConstraints { (make) in
+        view.addSubview(tableView)
+   
+       tableView.snp.makeConstraints { (make) in
             make.top.left.bottom.right.equalTo(view)
             
-        }
-        tableView.tableHeaderView = cycleScrollView
-   
-      
+     }
+
+      tableView.tableHeaderView =  heardView
         
-        
+
+
         
     }
     

@@ -62,7 +62,9 @@ extension QGNetAPI:TargetType {
     
   
     
-  public var baseURL: URL { return URL(string: "http://api.edu.qiqiaoguo.com/Phone")! }
+  //  public var baseURL: URL { return URL(string: "http://api.edu.blue69.cn/Phone")! }
+    
+    public var baseURL: URL { return URL(string: "http://api.edu.qiqiaoguo.com/Phone")! }
     
     public var path: String {
         switch self {
