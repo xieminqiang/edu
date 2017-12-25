@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -7,37 +7,35 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="cRB-hp-oA3">
+        <scene sceneID="qiK-Z0-ydD">
             <objects>
-                <viewController id="BbI-Gr-7KH" sceneMemberID="viewController">
+                <viewController id="1yf-ab-WW1" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="kdW-uo-Jp3"/>
-                        <viewControllerLayoutGuide type="bottom" id="L6X-6f-uYy"/>
+                        <viewControllerLayoutGuide type="top" id="pjW-Nf-7D2"/>
+                        <viewControllerLayoutGuide type="bottom" id="DRg-di-rBg"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="C1S-QK-3f4">
+                    <view key="view" contentMode="scaleToFill" id="DAg-rs-Tjs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StartBottomImage_logo" translatesAutoresizingMaskIntoConstraints="NO" id="rHH-JG-awg">
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StartBottomImage_logo" translatesAutoresizingMaskIntoConstraints="NO" id="A2Q-Kj-Hkz">
                                 <rect key="frame" x="0.0" y="556" width="375" height="111"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="L6X-6f-uYy" firstAttribute="top" secondItem="rHH-JG-awg" secondAttribute="bottom" id="X1k-KG-3Ro"/>
-                            <constraint firstAttribute="trailing" secondItem="rHH-JG-awg" secondAttribute="trailing" id="lkO-A4-E6G"/>
-                            <constraint firstItem="rHH-JG-awg" firstAttribute="leading" secondItem="C1S-QK-3f4" secondAttribute="leading" id="pKJ-sV-N56"/>
-                            <constraint firstItem="rHH-JG-awg" firstAttribute="height" secondItem="C1S-QK-3f4" secondAttribute="height" multiplier="1:6" id="y7t-xq-Xv4"/>
+                            <constraint firstAttribute="trailing" secondItem="A2Q-Kj-Hkz" secondAttribute="trailing" id="GpD-z0-0uD"/>
+                            <constraint firstItem="DRg-di-rBg" firstAttribute="top" secondItem="A2Q-Kj-Hkz" secondAttribute="bottom" id="Zhj-Bp-j8Y"/>
+                            <constraint firstItem="A2Q-Kj-Hkz" firstAttribute="leading" secondItem="DAg-rs-Tjs" secondAttribute="leading" id="pUW-gj-SOb"/>
+                            <constraint firstItem="A2Q-Kj-Hkz" firstAttribute="height" secondItem="DAg-rs-Tjs" secondAttribute="height" multiplier="1:6" id="zlv-Oa-eqF"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="dCO-lt-1mM"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nwE-kT-oPr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7w1-Gx-ddQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="401" y="287"/>
         </scene>

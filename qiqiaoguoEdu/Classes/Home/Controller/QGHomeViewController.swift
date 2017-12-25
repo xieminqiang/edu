@@ -62,6 +62,9 @@ class QGHomeViewController: QGViewController {
          self.heardView.catlittModel(model: dataModel.CateList)
         if dataModel.CateList.count>4 {
             heardView.frame =  CGRect.init(x: 0, y: 0, width:  view.width, height: Screen_width*0.625 + fixH(floatHeight: 200))
+        } else {
+            
+            heardView.frame =  CGRect.init(x: 0, y: 0, width:  view.width, height: Screen_width*0.625 + fixH(floatHeight:110))
         }
       
         self.tableView.reloadData()
@@ -83,7 +86,7 @@ class QGHomeViewController: QGViewController {
 
     fileprivate lazy var heardView:QGHomeHeardView = {
         let heardView = QGHomeHeardView()
-        heardView.frame =  CGRect.init(x: 0, y: 0, width:  view.width, height: Screen_width*0.625 + fixH(floatHeight:110))
+      
         heardView.backgroundColor = UIColor.white
         return heardView
     }()
@@ -117,9 +120,11 @@ extension QGHomeViewController: UITableViewDataSource, UITableViewDelegate {
         
         if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "QGNearCourseCell") as!  QGNearCourseCell
+            cell.selectionStyle = UITableViewCellSelectionStyle.none
             return cell
         } else {
             let ListCell = tableView.dequeueReusableCell(withIdentifier: "QGCoursesListCell") as!  QGCoursesListCell
+             ListCell.selectionStyle = UITableViewCellSelectionStyle.none
             let repo = coursesModel[(indexPath as NSIndexPath).row]
              ListCell.sendModel(model: repo)
             return ListCell
@@ -128,6 +133,19 @@ extension QGHomeViewController: UITableViewDataSource, UITableViewDelegate {
        
     }
 
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 0 {
+              print("1111111")
+        } else {
+               let repo = coursesModel[(indexPath as NSIndexPath).row]
+            let courseVC = QGClassRoomDetailsController()
+            courseVC.coursesId = repo.coursesId
+            self.navigationController?.pushViewController(courseVC, animated: true)
+             //
+            print("22222222")
+        }
+    }
 }
 // MARK: - 滑动改变导航栏透明度、标题颜色、左右按钮颜色、状态栏颜色
 extension QGHomeViewController

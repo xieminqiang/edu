@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		138FCF4E7C319B5F0AACEB11 /* Pods_qiqiaoguoEdu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB4450CF4F0DA25F751BB49 /* Pods_qiqiaoguoEdu.framework */; };
-		671C41581FED1DE0001451AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 671C41571FED1DE0001451AD /* LaunchScreen.storyboard */; };
 		673B41541FE7AEC6009C43D3 /* QGHomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673B41531FE7AEC6009C43D3 /* QGHomeModel.swift */; };
 		673B415A1FE7BCDA009C43D3 /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673B41591FE7BCD9009C43D3 /* NetworkTool.swift */; };
 		673B64231FC403C80072D1ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673B64221FC403C80072D1ED /* AppDelegate.swift */; };
@@ -39,6 +38,8 @@
 		676D7BD11FE36BFA00CC9470 /* QGBtnTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676D7BD01FE36BFA00CC9470 /* QGBtnTagView.swift */; };
 		676D7BDD1FE399B700CC9470 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676D7BDC1FE399B700CC9470 /* String+Ext.swift */; };
 		676D7BE31FE3CDC900CC9470 /* QGCoursesListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676D7BE21FE3CDC900CC9470 /* QGCoursesListModel.swift */; };
+		67814BEB1FF086CE0075D370 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67814BEA1FF086CE0075D370 /* LaunchScreen.storyboard */; };
+		67814BEF1FF08C320075D370 /* QGClassRoomDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67814BEE1FF08C320075D370 /* QGClassRoomDetailsController.swift */; };
 		67F8C0911FE1328F003AB977 /* QGCoursesListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F8C0901FE1328F003AB977 /* QGCoursesListCell.swift */; };
 		67FF46FD1FC52DA100420D6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67FF46FC1FC52DA100420D6E /* Main.storyboard */; };
 		67FF46FF1FC54EF500420D6E /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FF46FE1FC54EF500420D6E /* UIView+Ext.swift */; };
@@ -66,7 +67,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		671C41571FED1DE0001451AD /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		673B41531FE7AEC6009C43D3 /* QGHomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGHomeModel.swift; sourceTree = "<group>"; };
 		673B41591FE7BCD9009C43D3 /* NetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
 		673B641F1FC403C80072D1ED /* qiqiaoguoEdu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qiqiaoguoEdu.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +103,8 @@
 		676D7BD01FE36BFA00CC9470 /* QGBtnTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGBtnTagView.swift; sourceTree = "<group>"; };
 		676D7BDC1FE399B700CC9470 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		676D7BE21FE3CDC900CC9470 /* QGCoursesListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGCoursesListModel.swift; sourceTree = "<group>"; };
+		67814BEA1FF086CE0075D370 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		67814BEE1FF08C320075D370 /* QGClassRoomDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGClassRoomDetailsController.swift; sourceTree = "<group>"; };
 		67F8C0901FE1328F003AB977 /* QGCoursesListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGCoursesListCell.swift; sourceTree = "<group>"; };
 		67FF46FC1FC52DA100420D6E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		67FF46FE1FC54EF500420D6E /* UIView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
@@ -184,11 +186,11 @@
 			children = (
 				673B64531FC404F30072D1ED /* Classes */,
 				673B64221FC403C80072D1ED /* AppDelegate.swift */,
-				671C41571FED1DE0001451AD /* LaunchScreen.storyboard */,
 				673B64241FC403C80072D1ED /* ViewController.swift */,
 				67FF46FC1FC52DA100420D6E /* Main.storyboard */,
 				673B642C1FC403C80072D1ED /* Assets.xcassets */,
 				673B64311FC403C80072D1ED /* Info.plist */,
+				67814BEA1FF086CE0075D370 /* LaunchScreen.storyboard */,
 			);
 			path = qiqiaoguoEdu;
 			sourceTree = "<group>";
@@ -237,6 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				673B64631FC405CB0072D1ED /* QGHomeViewController.swift */,
+				67814BEE1FF08C320075D370 /* QGClassRoomDetailsController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -261,10 +264,10 @@
 				674890E71FEC90F7003D3823 /* QGHomeHeardView.swift */,
 				67F8C0901FE1328F003AB977 /* QGCoursesListCell.swift */,
 				674890E91FEC9F9E003D3823 /* QGNearCourseCell.swift */,
-				676D7BD01FE36BFA00CC9470 /* QGBtnTagView.swift */,
 				676B3EF31FEB9E2700846B1E /* QGCateListView.swift */,
-				674890F21FECE08E003D3823 /* QGNavView.swift */,
 				674890F41FECE3A9003D3823 /* QGTitleButton.swift */,
+				676D7BD01FE36BFA00CC9470 /* QGBtnTagView.swift */,
+				674890F21FECE08E003D3823 /* QGNavView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -498,7 +501,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				671C41581FED1DE0001451AD /* LaunchScreen.storyboard in Resources */,
+				67814BEB1FF086CE0075D370 /* LaunchScreen.storyboard in Resources */,
 				67FF46FD1FC52DA100420D6E /* Main.storyboard in Resources */,
 				673B642D1FC403C80072D1ED /* Assets.xcassets in Resources */,
 			);
@@ -621,6 +624,7 @@
 				673B64681FC405EE0072D1ED /* QGMessageViewController.swift in Sources */,
 				674890EE1FECD762003D3823 /* WRCustomNavigationBar.swift in Sources */,
 				67FF47011FC54EFE00420D6E /* Define.swift in Sources */,
+				67814BEF1FF08C320075D370 /* QGClassRoomDetailsController.swift in Sources */,
 				673B646A1FC4379B0072D1ED /* QGTabBarController.swift in Sources */,
 				673B64621FC4059A0072D1ED /* QGViewController.swift in Sources */,
 				676B3EF41FEB9E2700846B1E /* QGCateListView.swift in Sources */,

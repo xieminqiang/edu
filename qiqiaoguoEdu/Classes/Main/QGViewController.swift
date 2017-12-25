@@ -23,8 +23,6 @@ class QGViewController: UIViewController {
         
         view.addSubview(navBar)
         
-        // 设置自定义导航栏背景图片
-    
         // 设置自定义导航栏背景颜色
        // navBar.backgroundColor = UIColor.red
         
@@ -32,10 +30,10 @@ class QGViewController: UIViewController {
         navBar.titleLabelColor = QGColor_333333
           navBar.wr_setBackgroundAlpha(alpha: 0)
         // 设置自定义导航栏左右按钮字体颜色
-        navBar.wr_setTintColor(color:  QGColor_333333!)
+         navBar.wr_setTintColor(color:  QGColor_333333!)
         
         if self.navigationController?.childViewControllers.count != 1 {
-            navBar.wr_setLeftButton(title: "<<", titleColor: UIColor.white)
+            navBar.wr_setLeftButton(image: UIImage.init(named: "icon_classification_back")!)
         }
     }
     @objc fileprivate func back()
