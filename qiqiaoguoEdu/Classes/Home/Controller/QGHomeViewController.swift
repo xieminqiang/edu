@@ -27,14 +27,17 @@ class QGHomeViewController: QGViewController {
       super.viewDidLoad()
       
           setupUI()
-    
+      
+
         downloadRepositories(50)
   
      
 
     }
     func downloadRepositories(_ username: Int) {
-        gitHubProvider.rx.request(.loadHomeData(username))
+        
+
+        gitHubProvider.rx.request(QGNetAPI.loadHomeData(username))
         .mapObject(QGHomeRepositoryModel.self)
         .subscribe { event  in
             switch event {
@@ -77,12 +80,11 @@ class QGHomeViewController: QGViewController {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.backgroundColor = QGAPPBackgroundColor;
-        tableView.contentInset = UIEdgeInsetsMake(0, 0, -fixH(floatHeight: 10)+CGFloat(kNavBarBottom), 0)
+        tableView.contentInset = UIEdgeInsetsMake(0, 0, -fixH(floatHeight: 10) + CGFloat(kNavBarBottom), 0)
         tableView.register(QGNearCourseCell.classForCoder() , forCellReuseIdentifier: "QGNearCourseCell")
         tableView.register(QGCoursesListCell.classForCoder() , forCellReuseIdentifier: "QGCoursesListCell")
         return tableView
     }()
-    
 
     fileprivate lazy var heardView:QGHomeHeardView = {
         let heardView = QGHomeHeardView()

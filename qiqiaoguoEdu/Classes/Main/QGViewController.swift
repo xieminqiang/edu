@@ -7,9 +7,10 @@
 //
 
 import UIKit
-
+import RxSwift
 class QGViewController: UIViewController {
     lazy var navBar = WRCustomNavigationBar.CustomNavigationBar()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = QGAPPBackgroundColor

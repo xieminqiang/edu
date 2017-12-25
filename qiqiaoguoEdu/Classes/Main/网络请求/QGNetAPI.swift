@@ -24,6 +24,7 @@ let gitHubProvider = MoyaProvider<QGNetAPI>()
 
 public enum QGNetAPI {
     case loadHomeData(Int)
+    case loadCourseDetail(Int)
 
 }
 extension Moya.Response {
@@ -41,18 +42,19 @@ extension QGNetAPI:TargetType {
     }
     
     public var sampleData: Data {
-        switch self {
-        case .loadHomeData:
-            return "successfully".data(using: String.Encoding.utf8)!
-            
-        }
+   
+      return "successfully".data(using: String.Encoding.utf8)!
+  
+        
+        
     }
     
     public var task: Task {
         switch self {
         case .loadHomeData(let platform_id):
             return .requestParameters(parameters: ["platform_id": (platform_id)], encoding: URLEncoding.default)
-    
+        case .loadCourseDetail(let course_id):
+            return .requestParameters(parameters: ["course_id": (course_id)], encoding: URLEncoding.default)
         }
     }
     
@@ -70,7 +72,9 @@ extension QGNetAPI:TargetType {
         switch self {
         case .loadHomeData(_):
              return "/Home/getIndexV2"
+        case .loadCourseDetail(_):
+            return "/Edu/getCourseDetails"
         }
-    
+  
 }
 }
