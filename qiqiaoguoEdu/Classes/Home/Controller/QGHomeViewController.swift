@@ -136,7 +136,7 @@ extension QGHomeViewController: UITableViewDataSource, UITableViewDelegate {
         if indexPath.row == 0 {
               print("1111111")
         } else {
-               let repo = coursesModel[(indexPath as NSIndexPath).row]
+            let repo = coursesModel[(indexPath as NSIndexPath).row]
             let courseVC = QGClassRoomDetailsController()
             courseVC.coursesId = repo.coursesId
             self.navigationController?.pushViewController(courseVC, animated: true)

@@ -15,6 +15,11 @@
 		6739436A1FF4C6EC00D869BD /* QGToolButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673943691FF4C6EC00D869BD /* QGToolButtonView.swift */; };
 		6739436E1FF4DA6300D869BD /* QGOrgViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739436D1FF4DA6300D869BD /* QGOrgViewController.swift */; };
 		673943721FF4E25500D869BD /* QGTheatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673943711FF4E25500D869BD /* QGTheatherViewController.swift */; };
+		673943761FF4EFBE00D869BD /* QGOrgTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673943751FF4EFBE00D869BD /* QGOrgTableCell.swift */; };
+		673943781FF4EFE700D869BD /* QGOrgHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673943771FF4EFE700D869BD /* QGOrgHeaderView.swift */; };
+		6739437A1FF4F5F100D869BD /* QGOrgModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673943791FF4F5F100D869BD /* QGOrgModel.swift */; };
+		6739437C1FF4F9C900D869BD /* QGTeacherListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739437B1FF4F9C900D869BD /* QGTeacherListModel.swift */; };
+		6739437E1FF4FAE500D869BD /* QGOrgItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739437D1FF4FAE500D869BD /* QGOrgItemModel.swift */; };
 		673B41541FE7AEC6009C43D3 /* QGHomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673B41531FE7AEC6009C43D3 /* QGHomeModel.swift */; };
 		673B415A1FE7BCDA009C43D3 /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673B41591FE7BCD9009C43D3 /* NetworkTool.swift */; };
 		673B64231FC403C80072D1ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673B64221FC403C80072D1ED /* AppDelegate.swift */; };
@@ -83,6 +88,11 @@
 		673943691FF4C6EC00D869BD /* QGToolButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGToolButtonView.swift; sourceTree = "<group>"; };
 		6739436D1FF4DA6300D869BD /* QGOrgViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGOrgViewController.swift; sourceTree = "<group>"; };
 		673943711FF4E25500D869BD /* QGTheatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGTheatherViewController.swift; sourceTree = "<group>"; };
+		673943751FF4EFBE00D869BD /* QGOrgTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGOrgTableCell.swift; sourceTree = "<group>"; };
+		673943771FF4EFE700D869BD /* QGOrgHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGOrgHeaderView.swift; sourceTree = "<group>"; };
+		673943791FF4F5F100D869BD /* QGOrgModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGOrgModel.swift; sourceTree = "<group>"; };
+		6739437B1FF4F9C900D869BD /* QGTeacherListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGTeacherListModel.swift; sourceTree = "<group>"; };
+		6739437D1FF4FAE500D869BD /* QGOrgItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGOrgItemModel.swift; sourceTree = "<group>"; };
 		673B41531FE7AEC6009C43D3 /* QGHomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGHomeModel.swift; sourceTree = "<group>"; };
 		673B41591FE7BCD9009C43D3 /* NetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
 		673B641F1FC403C80072D1ED /* qiqiaoguoEdu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qiqiaoguoEdu.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -189,6 +199,25 @@
 			path = cousesDetail;
 			sourceTree = "<group>";
 		};
+		673943731FF4EF7400D869BD /* org */ = {
+			isa = PBXGroup;
+			children = (
+				673943751FF4EFBE00D869BD /* QGOrgTableCell.swift */,
+				673943771FF4EFE700D869BD /* QGOrgHeaderView.swift */,
+			);
+			path = org;
+			sourceTree = "<group>";
+		};
+		673943741FF4EF8D00D869BD /* org */ = {
+			isa = PBXGroup;
+			children = (
+				673943791FF4F5F100D869BD /* QGOrgModel.swift */,
+				6739437B1FF4F9C900D869BD /* QGTeacherListModel.swift */,
+				6739437D1FF4FAE500D869BD /* QGOrgItemModel.swift */,
+			);
+			path = org;
+			sourceTree = "<group>";
+		};
 		673B41501FE7ADCD009C43D3 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -287,6 +316,7 @@
 		673B64561FC404F30072D1ED /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				673943741FF4EF8D00D869BD /* org */,
 				6739436B1FF4D8CC00D869BD /* cousesDetail */,
 				673D80E51FEA127500E760F6 /* QGHomeRepositoryModel.swift */,
 				676D7BE21FE3CDC900CC9470 /* QGCoursesListModel.swift */,
@@ -301,6 +331,7 @@
 		673B64571FC404F30072D1ED /* View */ = {
 			isa = PBXGroup;
 			children = (
+				673943731FF4EF7400D869BD /* org */,
 				6739436C1FF4D92600D869BD /* cousesDetail */,
 				676B3EF51FEB9FD300846B1E /* QGCateListCollectionViewCell.swift */,
 				67F8C0901FE1328F003AB977 /* QGCoursesListCell.swift */,
@@ -659,6 +690,7 @@
 				673D80E61FEA127500E760F6 /* QGHomeRepositoryModel.swift in Sources */,
 				674890F31FECE08E003D3823 /* QGNavView.swift in Sources */,
 				6739436E1FF4DA6300D869BD /* QGOrgViewController.swift in Sources */,
+				6739437C1FF4F9C900D869BD /* QGTeacherListModel.swift in Sources */,
 				67FF46FF1FC54EF500420D6E /* UIView+Ext.swift in Sources */,
 				673D80E41FEA099700E760F6 /* QGNetAPI.swift in Sources */,
 				67FF47051FC556D500420D6E /* SwiftHEXColors.swift in Sources */,
@@ -672,12 +704,14 @@
 				674890EE1FECD762003D3823 /* WRCustomNavigationBar.swift in Sources */,
 				67FF47011FC54EFE00420D6E /* Define.swift in Sources */,
 				673943721FF4E25500D869BD /* QGTheatherViewController.swift in Sources */,
+				673943761FF4EFBE00D869BD /* QGOrgTableCell.swift in Sources */,
 				67814BEF1FF08C320075D370 /* QGClassRoomDetailsController.swift in Sources */,
 				67814BF91FF0DAD70075D370 /* QGClassRoomModel.swift in Sources */,
 				673B646A1FC4379B0072D1ED /* QGTabBarController.swift in Sources */,
 				673B64621FC4059A0072D1ED /* QGViewController.swift in Sources */,
 				676B3EF41FEB9E2700846B1E /* QGCateListView.swift in Sources */,
 				673943681FF4C4A400D869BD /* QGToolButton.swift in Sources */,
+				6739437A1FF4F5F100D869BD /* QGOrgModel.swift in Sources */,
 				674890EA1FEC9F9E003D3823 /* QGNearCourseCell.swift in Sources */,
 				6739436A1FF4C6EC00D869BD /* QGToolButtonView.swift in Sources */,
 				674A36AB1FEB53FD00CC48DA /* QGTaglistModel.swift in Sources */,
@@ -688,10 +722,12 @@
 				673B41541FE7AEC6009C43D3 /* QGHomeModel.swift in Sources */,
 				673B64251FC403C80072D1ED /* ViewController.swift in Sources */,
 				676B3EF61FEB9FD300846B1E /* QGCateListCollectionViewCell.swift in Sources */,
+				673943781FF4EFE700D869BD /* QGOrgHeaderView.swift in Sources */,
 				673B64231FC403C80072D1ED /* AppDelegate.swift in Sources */,
 				673943601FF47DAB00D869BD /* QGCoursesSectionListModel.swift in Sources */,
 				674890E81FEC90F7003D3823 /* QGHomeHeardView.swift in Sources */,
 				674890EF1FECD762003D3823 /* WRNavigationBar.swift in Sources */,
+				6739437E1FF4FAE500D869BD /* QGOrgItemModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

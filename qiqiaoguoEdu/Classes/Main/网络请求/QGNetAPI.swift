@@ -19,13 +19,13 @@ private func JSONResponseDataFormatter(_ data: Data) -> Data {
     }
 }
 
-//let gitHubProvider = MoyaProvider<QGNetAPI>(plugins: [NetworkLoggerPlugin(verbose: true, responseDataFormatter: JSONResponseDataFormatter)])
-let gitHubProvider = MoyaProvider<QGNetAPI>()
+let gitHubProvider = MoyaProvider<QGNetAPI>(plugins: [NetworkLoggerPlugin(verbose: true, responseDataFormatter: JSONResponseDataFormatter)])
+//let gitHubProvider = MoyaProvider<QGNetAPI>()
 
 public enum QGNetAPI {
     case loadHomeData(Int)
     case loadCourseDetail(Int)
-
+    case loadOrgDetail(Int)
 }
 extension Moya.Response {
     func mapNSArray() throws -> NSDictionary{
@@ -55,6 +55,8 @@ extension QGNetAPI:TargetType {
             return .requestParameters(parameters: ["platform_id": (platform_id)], encoding: URLEncoding.default)
         case .loadCourseDetail(let course_id):
             return .requestParameters(parameters: ["course_id": (course_id)], encoding: URLEncoding.default)
+        case .loadOrgDetail(let org_id):
+            return .requestParameters(parameters: ["org_id": (org_id)], encoding: URLEncoding.default)
         }
     }
     
@@ -74,6 +76,8 @@ extension QGNetAPI:TargetType {
              return "/Home/getIndexV2"
         case .loadCourseDetail(_):
             return "/Edu/getCourseDetails"
+        case .loadOrgDetail(_):
+            return "/Edu/getOrgDetails"
         }
   
 }
