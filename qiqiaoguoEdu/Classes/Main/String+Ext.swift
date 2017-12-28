@@ -42,4 +42,12 @@ extension String {
         
         return boundingBox.width
     }
+    
+    func stringWithConstrainedSize(width: CGFloat,height: CGFloat, font: UIFont) -> CGSize {
+        let constraintRect = CGSize(width: .greatestFiniteMagnitude, height: height)
+        let attrs = [NSAttributedStringKey.font: font]
+        let boundingBox = self.boundingRect(with: constraintRect, options: [.usesLineFragmentOrigin,.truncatesLastVisibleLine], attributes:attrs , context: nil)
+        
+        return boundingBox.size
+    }
 }

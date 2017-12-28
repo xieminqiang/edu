@@ -29,6 +29,7 @@ class QGHomeHeardView: UIView {
         
         let cycleScrollView = SDCycleScrollView.init()
         cycleScrollView.autoScrollTimeInterval = 3
+        cycleScrollView.pageDotColor = UIColor.init(white: 1, alpha: 0.4)
         cycleScrollView.pageControlDotSize = CGSize.init(width: 5, height: 5)
         return cycleScrollView
         

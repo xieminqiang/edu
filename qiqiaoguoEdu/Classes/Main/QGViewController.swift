@@ -35,6 +35,7 @@ class QGViewController: UIViewController {
         
         if self.navigationController?.childViewControllers.count != 1 {
             navBar.wr_setLeftButton(image: UIImage.init(named: "icon_classification_back")!)
+           
         }
     }
     @objc fileprivate func back()

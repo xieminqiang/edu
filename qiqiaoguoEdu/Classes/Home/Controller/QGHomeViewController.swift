@@ -35,8 +35,6 @@ class QGHomeViewController: QGViewController {
 
     }
     func downloadRepositories(_ username: Int) {
-        
-
         gitHubProvider.rx.request(QGNetAPI.loadHomeData(username))
         .mapObject(QGHomeRepositoryModel.self)
         .subscribe { event  in
@@ -48,7 +46,6 @@ class QGHomeViewController: QGViewController {
             case .error(let error):
                 print(error)
             }
-       
             }.disposed(by: disposeBag)
  
     }
@@ -88,7 +85,6 @@ class QGHomeViewController: QGViewController {
 
     fileprivate lazy var heardView:QGHomeHeardView = {
         let heardView = QGHomeHeardView()
-      
         heardView.backgroundColor = UIColor.white
         return heardView
     }()
