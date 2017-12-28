@@ -8,6 +8,7 @@
 
 import UIKit
 import RxSwift
+import SVProgressHUD
 class QGClassRoomDetailsController: QGViewController,UIWebViewDelegate {
     var coursesId: Int?
     let disposeBag = DisposeBag()
@@ -23,27 +24,30 @@ class QGClassRoomDetailsController: QGViewController,UIWebViewDelegate {
         navBar.title = "课堂详情"
         
         setupUI()
+        
+       loadData()
+        
+    }
+    
+    func loadData()  {
+        SVProgressHUD.show()
         gitHubProvider.rx.request(QGNetAPI.loadCourseDetail(coursesId!))
             .mapObject(QGClassRoomModel.self)
             .subscribe { event  in
                 switch event {
                 case .success(let repos):
                     self.detailModel = repos.itemD
-                    // print("sssssss",repos.itemD)
-                    
                     self.updata(dataModel: repos.itemD)
-                   
-                    
+                    SVProgressHUD.dismiss()
                 case .error(let error):
-                    
+                     SVProgressHUD.dismiss()
+                     self.tableView.reloadData()
                     print(error)
                 }
                 
             }.disposed(by: disposeBag)
         
-        
     }
-    
 
     func updata(dataModel:QGClassRoomDetailModel)  {
         for son in tagView.subviews {
@@ -54,7 +58,7 @@ class QGClassRoomDetailsController: QGViewController,UIWebViewDelegate {
         nameLab.text = dataModel.title
         priceLab.text = "¥" +  dataModel.class_price!
         tagView.creatButton(dataArr: dataModel.tagList)
-        
+          footerView.nameStr(str: "继续拖动，查看课程详情")
         headImg.frame = CGRect.init(x: 0, y: 0, width: Screen_width, height:Screen_width*0.625)
         nameLab.numberOfLines = 2;
         nameLab.width = Screen_width - QGScreenMargin*2
@@ -102,8 +106,6 @@ class QGClassRoomDetailsController: QGViewController,UIWebViewDelegate {
         if #available(iOS 11.0, *) {
             tableView.contentInsetAdjustmentBehavior = .never
         }
-        
-       self.tableView.frame = CGRect.init(x: 0, y: CGFloat(kNavBarBottom), width: Screen_width, height: Screen_height-CGFloat(kNavBarBottom)-54)
         navBar.backgroundColor = UIColor.white
         view.insertSubview(navBar, aboveSubview: tableView)
         
@@ -116,7 +118,7 @@ class QGClassRoomDetailsController: QGViewController,UIWebViewDelegate {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.backgroundColor = QGAPPBackgroundColor;
-
+        tableView.frame = CGRect.init(x: 0, y: CGFloat(kNavBarBottom), width: Screen_width, height: Screen_height-CGFloat(kNavBarBottom)-54)
         tableView.register(QGClassRoomDetailsCell.classForCoder() , forCellReuseIdentifier: "QGClassRoomDetailsCell")
    
         return tableView
@@ -142,7 +144,6 @@ class QGClassRoomDetailsController: QGViewController,UIWebViewDelegate {
     fileprivate lazy var footerView:QGPullView = {
         let footerView = QGPullView()
         footerView.frame = CGRect.init(x: 0, y: 0, width: Screen_width, height:fixH(floatHeight: 50))
-        footerView.nameStr(str: "继续拖动，查看课程详情")
         return footerView
     }()
     
@@ -216,35 +217,37 @@ class QGClassRoomDetailsController: QGViewController,UIWebViewDelegate {
     }
 }
 extension QGClassRoomDetailsController: UITableViewDataSource, UITableViewDelegate {
-    
-
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-
             if detailModel == nil {
                 return 0
             }else {
                 return  1
 
             }
-
-        
-        
-        
-        
-        
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             
             let cell = tableView.dequeueReusableCell(withIdentifier: "QGClassRoomDetailsCell") as!  QGClassRoomDetailsCell
             cell.selectionStyle = UITableViewCellSelectionStyle.none
             cell.model = self.detailModel
-       
+            cell.theacherClick.addTarget(self, action:#selector(theatherVC(button:)), for: .touchUpInside)
+            cell.orgClick.addTarget(self, action:#selector(orgVC(button:)), for: .touchUpInside)
             return cell
     
     }
     
-    
+    @objc func theatherVC(button:UIButton) {
+      let theatherVc =  QGTheatherViewController()
+        theatherVc.theatherId = self.detailModel?.teacher_id
+        self.navigationController?.pushViewController(theatherVc, animated: true)
+       
+    }
+    @objc func orgVC(button:UIButton) {
+        let theatherVc =  QGOrgViewController()
+        theatherVc.orgId = self.detailModel?.org_id
+        self.navigationController?.pushViewController(theatherVc, animated: true)
+        
+    }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0 {
             print("1111111")

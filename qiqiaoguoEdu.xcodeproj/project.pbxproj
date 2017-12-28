@@ -13,6 +13,8 @@
 		673943661FF4996800D869BD /* QGPullView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673943651FF4996800D869BD /* QGPullView.swift */; };
 		673943681FF4C4A400D869BD /* QGToolButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673943671FF4C4A400D869BD /* QGToolButton.swift */; };
 		6739436A1FF4C6EC00D869BD /* QGToolButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673943691FF4C6EC00D869BD /* QGToolButtonView.swift */; };
+		6739436E1FF4DA6300D869BD /* QGOrgViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739436D1FF4DA6300D869BD /* QGOrgViewController.swift */; };
+		673943721FF4E25500D869BD /* QGTheatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673943711FF4E25500D869BD /* QGTheatherViewController.swift */; };
 		673B41541FE7AEC6009C43D3 /* QGHomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673B41531FE7AEC6009C43D3 /* QGHomeModel.swift */; };
 		673B415A1FE7BCDA009C43D3 /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673B41591FE7BCD9009C43D3 /* NetworkTool.swift */; };
 		673B64231FC403C80072D1ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673B64221FC403C80072D1ED /* AppDelegate.swift */; };
@@ -79,6 +81,8 @@
 		673943651FF4996800D869BD /* QGPullView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGPullView.swift; sourceTree = "<group>"; };
 		673943671FF4C4A400D869BD /* QGToolButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGToolButton.swift; sourceTree = "<group>"; };
 		673943691FF4C6EC00D869BD /* QGToolButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGToolButtonView.swift; sourceTree = "<group>"; };
+		6739436D1FF4DA6300D869BD /* QGOrgViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGOrgViewController.swift; sourceTree = "<group>"; };
+		673943711FF4E25500D869BD /* QGTheatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGTheatherViewController.swift; sourceTree = "<group>"; };
 		673B41531FE7AEC6009C43D3 /* QGHomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGHomeModel.swift; sourceTree = "<group>"; };
 		673B41591FE7BCD9009C43D3 /* NetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
 		673B641F1FC403C80072D1ED /* qiqiaoguoEdu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qiqiaoguoEdu.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -274,6 +278,8 @@
 			children = (
 				673B64631FC405CB0072D1ED /* QGHomeViewController.swift */,
 				67814BEE1FF08C320075D370 /* QGClassRoomDetailsController.swift */,
+				6739436D1FF4DA6300D869BD /* QGOrgViewController.swift */,
+				673943711FF4E25500D869BD /* QGTheatherViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -652,6 +658,7 @@
 				673B64641FC405CB0072D1ED /* QGHomeViewController.swift in Sources */,
 				673D80E61FEA127500E760F6 /* QGHomeRepositoryModel.swift in Sources */,
 				674890F31FECE08E003D3823 /* QGNavView.swift in Sources */,
+				6739436E1FF4DA6300D869BD /* QGOrgViewController.swift in Sources */,
 				67FF46FF1FC54EF500420D6E /* UIView+Ext.swift in Sources */,
 				673D80E41FEA099700E760F6 /* QGNetAPI.swift in Sources */,
 				67FF47051FC556D500420D6E /* SwiftHEXColors.swift in Sources */,
@@ -664,6 +671,7 @@
 				673943621FF48D7700D869BD /* QGLoadWebView.swift in Sources */,
 				674890EE1FECD762003D3823 /* WRCustomNavigationBar.swift in Sources */,
 				67FF47011FC54EFE00420D6E /* Define.swift in Sources */,
+				673943721FF4E25500D869BD /* QGTheatherViewController.swift in Sources */,
 				67814BEF1FF08C320075D370 /* QGClassRoomDetailsController.swift in Sources */,
 				67814BF91FF0DAD70075D370 /* QGClassRoomModel.swift in Sources */,
 				673B646A1FC4379B0072D1ED /* QGTabBarController.swift in Sources */,
