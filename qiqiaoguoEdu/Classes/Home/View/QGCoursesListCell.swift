@@ -213,9 +213,10 @@ class QGCoursesListCell: UITableViewCell {
     
     func sendModel(model: QGCoursesListModel) {
         
-        for son in tagView.subviews {
-            son.removeFromSuperview()
-        }
+//        for son in tagView.subviews {
+//            son.removeFromSuperview()
+//        }
+        
         
         adressIcon.image = UIImage.init(named: "address_icon")
         adressLabel.text = model.address

@@ -47,15 +47,18 @@ class QGHomeHeardView: UIView {
         collectionView.snp.makeConstraints { (make) in
             make.top.equalTo(cycleScrollView.snp.bottom)
             make.left.right.equalTo(self)
-            make.bottom.equalTo(self).offset(0)
+            make.bottom.equalToSuperview()
         }
     
         
     }
     func catlittModel(model:[QGCateListModel]) {
-        self.catList = model
-        
-        collectionView.reloadData()
+       
+        if model.count > 0 {
+             self.catList = model
+             collectionView.reloadData()
+        }
+       
         
     }
     required init?(coder aDecoder: NSCoder) {

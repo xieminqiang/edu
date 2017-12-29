@@ -50,10 +50,7 @@ class QGClassRoomDetailsController: QGViewController,UIWebViewDelegate {
     }
 
     func updata(dataModel:QGClassRoomDetailModel)  {
-        for son in tagView.subviews {
-            son.removeFromSuperview()
-        }
-        
+    
         headImg.kf.setImage(with: URL(string:dataModel.cover_path!))
         nameLab.text = dataModel.title
         priceLab.text = "¥" +  dataModel.class_price!
@@ -199,15 +196,13 @@ class QGClassRoomDetailsController: QGViewController,UIWebViewDelegate {
     
     
     func goToDetailAnimation() {
-       
-        
         UIView.animate(withDuration:0.3, animations: {
             self.navBar.title = "图文详情"
             self.loadWebView.frame  = CGRect.init(x: 0, y: CGFloat(kNavBarBottom), width: Screen_width, height: Screen_height-CGFloat(kNavBarBottom)-54 )
             self.tableView.frame = CGRect.init(x: 0, y: -self.tableView.height, width: Screen_width, height: self.tableView.height)
         })
     }
-    func backToFirstPageAnimation (){
+       func backToFirstPageAnimation (){
         UIView.animate(withDuration:0.3, animations: {
               self.navBar.title = "课程详情"
             self.loadWebView.frame  = CGRect.init(x: 0, y: CGFloat(kNavBarBottom) +  Screen_height, width: Screen_width, height: Screen_height-CGFloat(kNavBarBottom) )
@@ -226,14 +221,12 @@ extension QGClassRoomDetailsController: UITableViewDataSource, UITableViewDelega
             }
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            
             let cell = tableView.dequeueReusableCell(withIdentifier: "QGClassRoomDetailsCell") as!  QGClassRoomDetailsCell
             cell.selectionStyle = UITableViewCellSelectionStyle.none
             cell.model = self.detailModel
             cell.theacherClick.addTarget(self, action:#selector(theatherVC(button:)), for: .touchUpInside)
             cell.orgClick.addTarget(self, action:#selector(orgVC(button:)), for: .touchUpInside)
             return cell
-    
     }
     
     @objc func theatherVC(button:UIButton) {

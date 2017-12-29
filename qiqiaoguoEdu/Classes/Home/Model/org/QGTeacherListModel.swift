@@ -12,7 +12,7 @@ import ObjectMapper
 class QGTeacherListModel:  Mappable  {
     var teacherList = [QGTeacherListModel]()
     var courseList =  [QGCoursesListModel]()
-    var orgItem  =  [QGCateListModel]()
+ 
     
     required init?(map: Map) {
     }
@@ -20,7 +20,7 @@ class QGTeacherListModel:  Mappable  {
     func mapping(map: Map) {
         teacherList <- map["extra.teacherList"]
        courseList <- map["extra.courseList"]
-       orgItem <- map["extra.item"]
+    
     }
 }
 

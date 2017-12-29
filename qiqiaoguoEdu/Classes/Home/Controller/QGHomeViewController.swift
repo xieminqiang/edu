@@ -77,7 +77,7 @@ class QGHomeViewController: QGViewController {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.backgroundColor = QGAPPBackgroundColor;
-        tableView.contentInset = UIEdgeInsetsMake(0, 0, -fixH(floatHeight: 10) + CGFloat(kNavBarBottom), 0)
+        tableView.contentInset = UIEdgeInsetsMake(0, 0, -fixH(floatHeight: 10) + (self.tabBarController?.tabBar.height)!, 0)
         tableView.register(QGNearCourseCell.classForCoder() , forCellReuseIdentifier: "QGNearCourseCell")
         tableView.register(QGCoursesListCell.classForCoder() , forCellReuseIdentifier: "QGCoursesListCell")
         return tableView
@@ -137,8 +137,8 @@ extension QGHomeViewController: UITableViewDataSource, UITableViewDelegate {
               print("1111111")
         } else {
             let repo = coursesModel[(indexPath as NSIndexPath).row]
-            let courseVC = QGClassRoomDetailsController()
-            courseVC.coursesId = repo.coursesId
+            let courseVC = QGOrgViewController()
+            courseVC.orgId = repo.coursesId
             self.navigationController?.pushViewController(courseVC, animated: true)
              //
             print("22222222")

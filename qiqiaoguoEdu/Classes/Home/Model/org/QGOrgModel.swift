@@ -9,11 +9,16 @@
 import Foundation
 import ObjectMapper
 class QGOrgModel: Mappable  {
+    var teacherList = [QGTeacherListModel]()
+    var courseList =  [QGCoursesListModel]()
+    var orgItem:QGOrgItemModel?
+    
     required init?(map: Map) {
-        
     }
     
     func mapping(map: Map) {
-        
+        teacherList <- map["extra.teacherList"]
+        courseList <- map["extra.courseList"]
+        orgItem <- map["extra.item"]
     }
 }

@@ -18,7 +18,9 @@ class QGBtnTagView: UIView {
 
     //添加子控制器
     func creatButton(dataArr:[QGTaglistModel]?)   {
-        
+        for son in self.subviews {
+            son.removeFromSuperview()
+        }
         var upX: CGFloat = 0.0
         for i in dataArr! {
             let str: String = i.tag_name!

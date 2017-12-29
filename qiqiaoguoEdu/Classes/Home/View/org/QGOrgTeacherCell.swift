@@ -1,14 +1,14 @@
 //
-//  QGOrgTableCell.swift
+//  QGOrgTeacherCell.swift
 //  qiqiaoguoEdu
 //
-//  Created by xieminqiang on 2017/12/28.
+//  Created by xieminqiang on 2017/12/29.
 //  Copyright © 2017年 xieminqiang. All rights reserved.
 //
 
 import UIKit
 
-class QGOrgTableCell: UITableViewCell {
+class QGOrgTeacherCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
